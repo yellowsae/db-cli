@@ -1,0 +1,28 @@
+{
+  "name": "db-cli",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "bin": {
+    "db": "./dist/index.js"
+  },
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "start": "node ./dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^11.1.2",
+    "commander": "^11.0.0",
+    "rollup": "^3.27.2",
+    "tslib": "^2.6.1"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "chalk": "^5.3.0"
+  }
+}
