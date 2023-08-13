@@ -2,6 +2,7 @@
 import { Command } from 'commander'
 import getTimeNode from './modules/time-node'
 import getIP from './modules/get-ip'
+import getSystemInfo from './modules/get-system-info'
 
 
 const program = new Command()
@@ -26,6 +27,11 @@ program
   .option('-i, --internal', '获取公网IP')
   .action(getIP);
 
+// 获取系统信息 
+program
+  .command('system')
+  .description('Get system information.')
+  .action(getSystemInfo);
 
 program.parse();
 
